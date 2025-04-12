@@ -1,0 +1,24 @@
+#map {
+  height: 500px;
+}
+
+.quote-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.landmark-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.leaflet-marker-icon .landmark-label {
+  font-weight: bold;
+  font-size: 12px;
+  background-color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-bottom: 2px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LaughNav - Funny GPS Directions</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/esri-leaflet-geocoder/dist/esri-leaflet-geocoder.css"/>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-yellow-50">
+  <div class="max-w-6xl mx-auto py-8">
+    <h1 class="text-3xl font-bold text-center text-pink-600 mb-6">
+      LaughNav - Your Comically Smart Navigator
+    </h1>
+
+    <div id="funnyQuote" class="quote-container text-lg font-semibold text-gray-700"></div>
+
+    <div class="mb-6 flex space-x-4 justify-center">
+      <input id="start" type="text" placeholder="Enter Start (e.g., Camp)" class="px-4 py-2 border rounded-md w-64" />
+      <input id="end" type="text" placeholder="Enter Destination (e.g., Kashmere Gate)" class="px-4 py-2 border rounded-md w-64" />
+      <button onclick="searchRoute()" class="px-4 py-2 bg-pink-500 text-white rounded-md">LaughRoute! 😂</button>
+    </div>
+
+    <div class="flex rounded-lg shadow-lg overflow-hidden">
+      <div class="w-1/4 bg-white p-4 space-y-4">
+        <div class="text-lg font-bold text-purple-600">Funny Rename Guide</div>
+        <div>🏠 Home = Snore Castle</div>
+        <div>🏥 Hospital = Ouch Palace</div>
+        <div>🏫 School = Mini Human Zoo</div>
+        <div>🗺 Mall = Retail Kingdom</div>
+        <div>🏞 Park = Green Laughterland</div>
+        <div>🛒 Market = Yelling & Smelling Arena</div>
+      </div>
+      <div class="w-3/4 relative">
+        <div id="map"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+  <script src="https://unpkg.com/esri-leaflet-geocoder/dist/esri-leaflet-geocoder.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+
